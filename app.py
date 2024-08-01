@@ -54,6 +54,9 @@ rename_col=df.rename(columns={'Zone':'Zones'},inplace=True)
 print(df);
 
 Upper=df['Zones'].str.upper()
-print(Upper)
+print(Upper);
+
+Lower = df['Zones'].str.lower()
+print(Lower);
 
 export_clean_Data=df.to_csv('Diwali_Sales1.csv',index=True)
