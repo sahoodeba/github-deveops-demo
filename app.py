@@ -59,4 +59,7 @@ print(Upper);
 Lower = df['Zones'].str.lower()
 print(Lower);
 
+mean=df['Amount'].mean()
+print(f'Mean values is {mean}');
+
 export_clean_Data=df.to_csv('Diwali_Sales1.csv',index=True)
